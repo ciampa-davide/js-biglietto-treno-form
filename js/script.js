@@ -33,6 +33,7 @@ btnGenera.addEventListener("click",
       console.log(prezzoFinale);
       document.getElementById("offerta").innerHTML="Offerta standard";
     }
+
     document.getElementById("prezzofinale").innerHTML= prezzoFinale.toPrecision (3);
 
     var nomeUtente= document.getElementById("nome").value;
@@ -44,5 +45,17 @@ btnGenera.addEventListener("click",
     var vagone=Math.floor(Math.random()*10) + 1;
     document.getElementById("carrozza").innerHTML=vagone;
 
+  }
+)
+var btnAnnulla= document.getElementById("annulla");
+btnAnnulla.addEventListener("click",
+  function(){
+    document.getElementById("nome").value=" ";
+    document.getElementById("km").value=" ";
+    document.getElementById("eta").value=" ";
+    document.getElementById("offerta").innerHTML=" ";
+    document.getElementById("nomeBiglietto").innerHTML=" ";
+    document.getElementById("codice").innerHTML=" ";
+    document.getElementById("carrozza").innerHTML=" ";
   }
 )
