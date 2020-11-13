@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h3>Nome Cognome</h3>
+          <input id="nome" type="text" name="Nome" value="" placeholder="Nome e Cognome">
+        </div>
+        <div  class="col-lg-4">
+          <h3>Km da percorrere</h3>
+          <input id="km" type="number" name="" value="">
+        </div>
+        <div class="col-lg-4">
+          <h3>Eta'</h3>
+          <select id="eta" class="" name="eta">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">maggiorenne</option>
+            <option value="over65">over 65</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6">
+          <button class:"btn" id="genera" type="button" name="button"> genera</button>
+        </div>
+        <div class="col-6">
+           <button class:"btn" type="button" name="button"> annulla </button>
+        </div>
+      </div>
+    </div>
+    <div class="biglietto">
+      <h2 class="text-center">il tuo biglietto</h2>
+      <div id="stampa_biglietto" class="hidden">
+        <h3>dettagli passeggero</h3>
+        <table>
+          <tr>
+            <th> Nome passeggero </th>
+            <th> offerta </th>
+            <th> Carrozza </th>
+            <th> CP code </th>
+            <th> costo Biglietto </th>
+
+          </tr>
+
+          <tr>
+            <th id="nome"></th>
+            <th id="offerta"></th>
+            <th id="carrozza"></th>
+            <th id="codice"></th>
+            <th id="prezzofinale"></th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
