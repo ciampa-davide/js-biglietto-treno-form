@@ -22,7 +22,7 @@ btnGenera.addEventListener("click",
       prezzoFinale= prezzo - sconto;
       console.log(prezzoFinale);
       document.getElementById("offerta").innerHTML="sconto minorenni";
-    }else if (anni > "over65") {
+    }else if (anni == "over65") {
       sconto= ((prezzo * 40) / 100);
       console.log(sconto);
       prezzoFinale= prezzo - sconto;
