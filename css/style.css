@@ -1,0 +1,46 @@
+body{
+  background: lightblue;
+}
+.genera{
+  margin-top: 20px;
+  text-align: right;
+}
+.annulla{
+  margin-top: 20px;
+}
+.hidden_first{
+  opacity: 0;
+  transition: 1s;
+}
+
+.show_after{
+  opacity:1;
+  transition:1s;
+}
+
+table{
+  margin: 20px auto;
+}
+
+tr{
+  margin-bottom: 10px;
+}
+th{
+  width: 200px;
+  padding-left: 25px;
+}
+
+.biglietto > h2{
+  margin-bottom: 70px;
+  border: 2px solid white;
+}
+
+.upper > th{
+  text-align:center;
+  color:white;
+  border: 2px solid white;
+}
+
+.white{
+  color: white;
+}

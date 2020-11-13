@@ -34,16 +34,21 @@ btnGenera.addEventListener("click",
       document.getElementById("offerta").innerHTML="Offerta standard";
     }
 
-    document.getElementById("prezzofinale").innerHTML= prezzoFinale.toPrecision (3);
+    document.getElementById("prezzofinale").innerHTML= prezzoFinale.toPrecision (3) + ("€");
 
     var nomeUtente= document.getElementById("nome").value;
     document.getElementById("nomeBiglietto").innerHTML=nomeUtente;
 
-    var cp=Math.floor(Math.random()*99999) +90000;
+    var cp=Math.floor(Math.random()*99999);
     document.getElementById("codice").innerHTML=cp;
 
     var vagone=Math.floor(Math.random()*10) + 1;
     document.getElementById("carrozza").innerHTML=vagone;
+
+    var hidden= document.getElementById("stampa_biglietto");
+    hidden.classList.remove("hidden_first");
+    hidden.classList.add("show_after");
+
 
   }
 )
@@ -51,11 +56,12 @@ var btnAnnulla= document.getElementById("annulla");
 btnAnnulla.addEventListener("click",
   function(){
     document.getElementById("nome").value=" ";
-    document.getElementById("km").value=" ";
-    document.getElementById("eta").value=" ";
-    document.getElementById("offerta").innerHTML=" ";
-    document.getElementById("nomeBiglietto").innerHTML=" ";
-    document.getElementById("codice").innerHTML=" ";
-    document.getElementById("carrozza").innerHTML=" ";
+    document.getElementById("km").value="";
+    document.getElementById("eta").value="";
+    document.getElementById("offerta").innerHTML="";
+    document.getElementById("nomeBiglietto").innerHTML="";
+    document.getElementById("codice").innerHTML="";
+    document.getElementById("carrozza").innerHTML="";
+    document.getElementById("prezzofinale").innerHTML="";
   }
 )
